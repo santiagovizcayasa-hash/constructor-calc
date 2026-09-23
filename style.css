@@ -1,0 +1,190 @@
+
+:root {
+  --color-fondo: #eef1f4;      /* gris azulado claro, fondo general */
+  --color-tarjeta: #ffffff;    /* blanco, fondo de las tarjetas */
+  --color-texto: #2f3e46;      /* gris oscuro, casi negro */
+  --color-borde: #c9d1d6;      /* gris claro para bordes */
+  --color-primario: #2f3e46;   /* azul-gris oscuro, para la barra superior */
+  --color-acento: #e07b39;     /* naranja, color de "obra/construccion" */
+  --color-acento-oscuro: #c2632b; /* naranja mas oscuro, para hover */
+  --radio: 8px;                /* radio de bordes redondeados */
+}
+
+/* --- 2. Reset basico -------------------------
+  Quitamos margenes raros que trae el navegador
+   por defecto, para controlar nosotros el diseño. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.5;
+}
+
+/* --- 3. Barra superior (aparece en todas las pantallas) --- */
+.barra-superior {
+  background-color: var(--color-primario);
+  color: #ffffff;
+  padding: 16px 24px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* --- 4. Contenedor central -------------------
+   Centra el contenido y evita que las tarjetas
+   se estiren demasiado en pantallas grandes. */
+.contenedor {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+/* --- 5. Tarjeta (la caja blanca con el formulario) --- */
+.tarjeta {
+  background-color: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  padding: 28px 24px;
+}
+
+.tarjeta h1 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* --- 6. Formularios: campo por campo --------- */
+.campo {
+  margin-bottom: 16px;
+}
+
+.campo label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.campo input,
+.campo select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  font-size: 1rem;
+}
+
+/* Cuando el usuario hace click en un input, resaltamos el borde */
+.campo input:focus,
+.campo select:focus {
+  outline: none;
+  border-color: var(--color-acento);
+}
+
+/* --- 7. Botones -------------------------------
+   .boton = boton principal (naranja, relleno)
+   .boton-enlace = link que se ve como texto */
+.boton {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: var(--color-acento);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radio);
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.boton:hover {
+  background-color: var(--color-acento-oscuro);
+}
+
+.enlaces-secundarios {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.enlaces-secundarios a {
+  color: var(--color-primario);
+  text-decoration: none;
+}
+
+.enlaces-secundarios a:hover {
+  text-decoration: underline;
+}
+
+/* --- 8. Menu principal: lista de opciones ---- */
+.lista-menu {
+  list-style: none;
+}
+
+.lista-menu li {
+  margin-bottom: 10px;
+}
+
+.lista-menu a {
+  display: block;
+  padding: 14px 16px;
+  background-color: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  text-decoration: none;
+  color: var(--color-texto);
+  font-weight: 500;
+}
+
+.lista-menu a:hover {
+  border-color: var(--color-acento);
+}
+
+.lista-menu .salir a {
+  background-color: var(--color-primario);
+  color: #ffffff;
+  text-align: center;
+}
+
+/* --- 9. Caja de resultado (pantallas de calculo) --- */
+.resultado {
+  margin-top: 18px;
+  padding: 16px;
+  background-color: var(--color-fondo);
+  border: 1px dashed var(--color-borde);
+  border-radius: var(--radio);
+  font-size: 0.95rem;
+}
+
+.resultado h2 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.resultado ul {
+  list-style: none;
+}
+
+.resultado li {
+  margin-bottom: 4px;
+}
+
+/* --- 10. Volver al menu (enlace que aparece abajo) --- */
+.volver {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 0.9rem;
+  color: var(--color-primario);
+  text-decoration: none;
+}
+
+.volver:hover {
+  text-decoration: underline;
+}
