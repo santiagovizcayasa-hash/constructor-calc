@@ -1,10 +1,14 @@
 
+/* --- 1. Colores y medidas del proyecto ----------
+   Guardamos los colores en variables para no repetirlos.
+   Asi, si un dia hay que cambiar un color, se cambia
+   en un solo lugar y no en todas las paginas. */
 :root {
   --color-fondo: #eef1f4;      /* gris azulado claro, fondo general */
   --color-tarjeta: #ffffff;    /* blanco, fondo de las tarjetas */
   --color-texto: #2f3e46;      /* gris oscuro, casi negro */
   --color-borde: #c9d1d6;      /* gris claro para bordes */
-  --color-primario: #2f3e46;   /* azul-gris oscuro, para la barra superior */
+  --color-primario: #2f3e46;   /* mismo gris oscuro, para la barra superior */
   --color-acento: #e07b39;     /* naranja, color de "obra/construccion" */
   --color-acento-oscuro: #c2632b; /* naranja mas oscuro, para hover */
   --radio: 8px;                /* radio de bordes redondeados */
@@ -58,6 +62,12 @@ body {
   text-align: center;
 }
 
+/* Texto corto de ayuda que va debajo del titulo */
+.texto-ayuda {
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+
 /* --- 6. Formularios: campo por campo --------- */
 .campo {
   margin-bottom: 16px;
@@ -86,8 +96,10 @@ body {
 }
 
 /* --- 7. Botones -------------------------------
-   .boton = boton principal (naranja, relleno)
-   .boton-enlace = link que se ve como texto */
+   .boton = el boton naranja, relleno.
+   Se usa en un <button> cuando el boton es una accion
+   (ej: "Calcular") y en un <a> cuando el boton es
+   un enlace que lleva a otra pagina (ej: "Ingresar"). */
 .boton {
   display: block;
   width: 100%;
