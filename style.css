@@ -10,6 +10,7 @@
   --color-borde: #c9d1d6;      /* gris claro para bordes */
   --color-primario: #2f3e46;   /* mismo gris oscuro, para la barra superior */
   --color-acento: #e07b39;     /* naranja, color de "obra/construccion" */
+  --color-acento-enfoque: #181c21; /* azul, color para enfoque */
   --color-acento-oscuro: #c2632b; /* naranja mas oscuro, para hover */
   --radio: 8px;                /* radio de bordes redondeados */
 }
@@ -92,7 +93,7 @@ body {
 .campo input:focus,
 .campo select:focus {
   outline: none;
-  border-color: var(--color-acento);
+  border-color: var(--color-acento-enfoque);
 }
 
 /* --- 7. Botones -------------------------------
