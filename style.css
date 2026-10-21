@@ -1,8 +1,4 @@
 
-/* --- 1. Colores y medidas del proyecto ----------
-   Guardamos los colores en variables para no repetirlos.
-   Asi, si un dia hay que cambiar un color, se cambia
-   en un solo lugar y no en todas las paginas. */
 :root {
   --color-fondo: #eef1f4;      /* gris azulado claro, fondo general */
   --color-tarjeta: #ffffff;    /* blanco, fondo de las tarjetas */
@@ -10,14 +6,11 @@
   --color-borde: #c9d1d6;      /* gris claro para bordes */
   --color-primario: #2f3e46;   /* mismo gris oscuro, para la barra superior */
   --color-acento: #e07b39;     /* naranja, color de "obra/construccion" */
-  --color-acento-enfoque: #181c21; /* azul, color para enfoque */
+  --color-acento-enfoque: #9eb7d6; /* azul, color para enfoque */
   --color-acento-oscuro: #c2632b; /* naranja mas oscuro, para hover */
   --radio: 8px;                /* radio de bordes redondeados */
 }
 
-/* --- 2. Reset basico -------------------------
-  Quitamos margenes raros que trae el navegador
-   por defecto, para controlar nosotros el diseño. */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,25 +24,27 @@ body {
   line-height: 1.5;
 }
 
-/* --- 3. Barra superior (aparece en todas las pantallas) --- */
+
 .barra-superior {
   background-color: var(--color-primario);
   color: #ffffff;
   padding: 16px 24px;
   font-size: 1.2rem;
   font-weight: 600;
+  
+}
+.logo{
+  width: 3vw;
+  
 }
 
-/* --- 4. Contenedor central -------------------
-   Centra el contenido y evita que las tarjetas
-   se estiren demasiado en pantallas grandes. */
 .contenedor {
   max-width: 420px;
   margin: 40px auto;
   padding: 0 16px;
 }
 
-/* --- 5. Tarjeta (la caja blanca con el formulario) --- */
+
 .tarjeta {
   background-color: var(--color-tarjeta);
   border: 1px solid var(--color-borde);
@@ -63,13 +58,13 @@ body {
   text-align: center;
 }
 
-/* Texto corto de ayuda que va debajo del titulo */
+
 .texto-ayuda {
   margin-bottom: 16px;
   font-size: 0.9rem;
 }
 
-/* --- 6. Formularios: campo por campo --------- */
+
 .campo {
   margin-bottom: 16px;
 }
@@ -89,18 +84,13 @@ body {
   font-size: 1rem;
 }
 
-/* Cuando el usuario hace click en un input, resaltamos el borde */
+
 .campo input:focus,
 .campo select:focus {
   outline: none;
   border-color: var(--color-acento-enfoque);
 }
 
-/* --- 7. Botones -------------------------------
-   .boton = el boton naranja, relleno.
-   Se usa en un <button> cuando el boton es una accion
-   (ej: "Calcular") y en un <a> cuando el boton es
-   un enlace que lleva a otra pagina (ej: "Ingresar"). */
 .boton {
   display: block;
   width: 100%;
@@ -117,26 +107,20 @@ body {
   margin-top: 8px;
 }
 
-.boton:hover {
-  background-color: var(--color-acento-oscuro);
+
+
+.contenedor-enlaces {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.enlaces-secundarios {
-  margin-top: 18px;
-  text-align: center;
-  font-size: 0.9rem;
-}
-
-.enlaces-secundarios a {
+.contenedor-enlaces a {
   color: var(--color-primario);
   text-decoration: none;
+  font-size: 13px;
 }
 
-.enlaces-secundarios a:hover {
-  text-decoration: underline;
-}
-
-/* --- 8. Menu principal: lista de opciones ---- */
 .lista-menu {
   list-style: none;
 }
@@ -161,12 +145,12 @@ body {
 }
 
 .lista-menu .salir a {
-  background-color: var(--color-primario);
+  background-color: var(--color-acento);
   color: #ffffff;
   text-align: center;
 }
 
-/* --- 9. Caja de resultado (pantallas de calculo) --- */
+
 .resultado {
   margin-top: 18px;
   padding: 16px;
@@ -189,7 +173,7 @@ body {
   margin-bottom: 4px;
 }
 
-/* --- 10. Volver al menu (enlace que aparece abajo) --- */
+
 .volver {
   display: inline-block;
   margin-top: 18px;
@@ -200,4 +184,7 @@ body {
 
 .volver:hover {
   text-decoration: underline;
+}
+.salir:hover {
+ color:#2ac169;
 }
