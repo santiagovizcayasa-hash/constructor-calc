@@ -109,13 +109,13 @@ body {
 
 
 
-.contenedor-enlaces {
+.enlaces-secundarios {
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
 }
 
-.contenedor-enlaces a {
+.enlaces-secundarios a {
   color: var(--color-primario);
   text-decoration: none;
   font-size: 13px;
