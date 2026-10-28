@@ -1,1 +1,115 @@
-[]
+[
+  {
+    "tipo": "techo",
+    "datos": {
+      "espesor": "15",
+      "ancho": "5",
+      "largo": "8"
+    },
+    "resultados": [
+      {
+        "etiqueta": "Superficie",
+        "valor": 40,
+        "unidad": "m²"
+      },
+      {
+        "etiqueta": "Cemento",
+        "valor": 1980,
+        "unidad": "kg"
+      },
+      {
+        "etiqueta": "Arena",
+        "valor": 4.32,
+        "unidad": "m³"
+      },
+      {
+        "etiqueta": "Piedra",
+        "valor": 4.32,
+        "unidad": "m³"
+      },
+      {
+        "etiqueta": "Hierro Ø8",
+        "valor": 280,
+        "unidad": "m"
+      },
+      {
+        "etiqueta": "Hierro Ø6",
+        "valor": 160,
+        "unidad": "m"
+      }
+    ]
+  },
+  {
+    "tipo": "techo",
+    "datos": {
+      "espesor": "5",
+      "ancho": "4",
+      "largo": "8"
+    },
+    "resultados": [
+      {
+        "etiqueta": "Superficie",
+        "valor": 32,
+        "unidad": "m²"
+      },
+      {
+        "etiqueta": "Cemento",
+        "valor": 528,
+        "unidad": "kg"
+      },
+      {
+        "etiqueta": "Arena",
+        "valor": 1.15,
+        "unidad": "m³"
+      },
+      {
+        "etiqueta": "Piedra",
+        "valor": 1.15,
+        "unidad": "m³"
+      },
+      {
+        "etiqueta": "Hierro Ø8",
+        "valor": 224,
+        "unidad": "m"
+      },
+      {
+        "etiqueta": "Hierro Ø6",
+        "valor": 128,
+        "unidad": "m"
+      }
+    ]
+  },
+  {
+    "tipo": "viga",
+    "datos": {
+      "largo": "8"
+    },
+    "resultados": [
+      {
+        "etiqueta": "Cemento",
+        "valor": 90,
+        "unidad": "kg"
+      },
+      {
+        "etiqueta": "Arena",
+        "valor": 0.2,
+        "unidad": "m³"
+      },
+      {
+        "etiqueta": "Piedra",
+        "valor": 0.2,
+        "unidad": "m³"
+      },
+      {
+        "etiqueta": "Hierro Ø8",
+        "valor": 40,
+        "unidad": "m"
+      },
+      {
+        "etiqueta": "Hierro Ø4",
+        "valor": 30,
+        "unidad": "m"
+      }
+    ]
+  }
+]

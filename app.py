@@ -159,6 +159,12 @@ def calcular_api(tipo):
 
     return jsonify({"tipo": tipo, "resultados": resultados})
 
+@app.route('/')
+def home():
+    return send_from_directory('.', '01-login.html')
 
 if __name__ == "__main__":
     app.run(port=8000)
+    from flask import send_from_directory
+
+
